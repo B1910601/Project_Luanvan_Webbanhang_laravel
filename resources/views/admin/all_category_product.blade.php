@@ -88,7 +88,7 @@
                             <a href="{{URL::to('/edit-category-product/'.$cate_pro->category_id)}}" class="active" ui-toggle-class=""><i
                                     class="fa fa-pencil-square-o text-success text-active"></i>
                             </a>
-                            <a onclick="return confirm('Bạn có chắc muốn xóa danh mục này?')" href=" {{URL::to('/delete-category-product')}}" class="active" ui-toggle-class="">
+                            <a onclick="return confirm('Bạn có chắc muốn xóa danh mục này?')" href=" {{URL::to('/delete-category-product/'.$cate_pro->category_id)}}" class="active" ui-toggle-class="">
                                 <i class="fa fa-times text-danger text"></i>
                             </a>
                         </td>

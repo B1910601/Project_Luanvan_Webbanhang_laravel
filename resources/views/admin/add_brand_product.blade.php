@@ -9,7 +9,7 @@
             <div class="panel-body">
 
                 <div class="position-center">
-                    <form role="form" action="{{URL::to('/save-category-product')}}" method="POST">
+                    <form role="form" action="{{URL::to('/save-brand-product')}}" method="POST">
                         {{ csrf_field() }}
                         <div class="form-group">
                             <label for="exampleInputEmail1">Name Brand</label>
