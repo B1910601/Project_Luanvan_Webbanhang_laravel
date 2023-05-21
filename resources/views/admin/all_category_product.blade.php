@@ -12,7 +12,7 @@
     </style>
     <div class="panel panel-default">
         <div class="panel-heading">
-            Category Product
+            DANH MỤC SẢN PHẨM
         </div>
         <?php
                                 	$message = Session::get('message');
