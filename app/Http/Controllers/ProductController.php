@@ -8,8 +8,18 @@ use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\Redirect;
 class ProductController extends Controller
 {
+    public function AuthLogin()
+    {
+        $admin_id = Session::get('id');
+        if ($admin_id) {
+            return Redirect::to('dashboard');
+        } else {
+            return Redirect::to('admin')->send();
+        }
+    }
     public function add_product()
     {
+        $this->AuthLogin();
         $cate_product = DB::table('tbl_category_product')->orderBy('category_id', 'desc')->get();
         $brand_product = DB::table('tbl_brand_product')->orderBy('brand_id', 'desc')->get();
 
@@ -18,6 +28,7 @@ class ProductController extends Controller
     }
     public function all_product()
     {
+        $this->AuthLogin();
         $all_product = DB::table('tbl_product')
         ->join('tbl_category_product','tbl_category_product.category_id','=','tbl_product.category_id')
         ->join('tbl_brand_product','tbl_brand_product.brand_id', '=', 'tbl_product.brand_id')->orderBy('tbl_product.product_id', 'desc')->get();
@@ -26,6 +37,7 @@ class ProductController extends Controller
     }
     public function save_product(Request $request)
     {
+        $this->AuthLogin();
         $data = array();
         $data['product_name'] = $request->product_name;
         $data['product_price'] = $request->product_price;
@@ -65,6 +77,7 @@ class ProductController extends Controller
     }
     public function edit_product($product_id)
     {
+        $this->AuthLogin();
         $cate_product = DB::table('tbl_category_product')->orderBy('category_id', 'desc')->get();
         $brand_product = DB::table('tbl_brand_product')->orderBy('brand_id', 'desc')->get();
 
@@ -100,6 +113,7 @@ class ProductController extends Controller
     }
     public function delete_product($product_id)
     {
+        $this->AuthLogin();
         DB::table('tbl_product')->where('product_id', $product_id)->delete();
         Session::put('message', 'Xóa sản phẩm thành công');
         return Redirect::to('/all-product');
