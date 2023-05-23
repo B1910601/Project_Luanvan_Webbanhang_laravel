@@ -10,11 +10,11 @@ class BrandProduct extends Controller
 {
     public function AuthLogin()
     {
-        $admin_id = Session::get('id');
+        $admin_id = Session::get('admin_id');
         if ($admin_id) {
             return Redirect::to('dashboard');
         } else {
-            return Redirect::to('admin')->send();
+            return Redirect::to('admin');
         }
     }
     public function add_brand_product()
@@ -38,21 +38,21 @@ class BrandProduct extends Controller
         $data['brand_status'] = $request->brand_product_status;
 
         DB::table('tbl_brand_product')->insert($data);
-        Session::put('message', 'Thêm thương hiệu sản phẩm thành công');
+        Session::put('message', 'Ẩn');
         return Redirect::to('/all-brand-product');
     }
     public function active_brand_product($brand_product_id)
     {
         $this->AuthLogin();
         DB::table('tbl_brand_product')->where('brand_id', $brand_product_id)->update(['brand_status' => 0]);
-        Session::put('message', 'Kích hoạt danh mục sản phẩm thành công');
+        Session::put('message', 'Ẩn');
         return Redirect::to('/all-brand-product');
     }
     public function unactive_brand_product($brand_product_id)
     {
         $this->AuthLogin();
         DB::table('tbl_brand_product')->where('brand_id', $brand_product_id)->update(['brand_status' => 1]);
-        Session::put('message', 'Không kích hoạt Thương hiệu sản phẩm thành công');
+        Session::put('message', 'Hiển thị');
         return Redirect::to('/all-brand-product');
     }
     public function edit_brand_product($brand_product_id)

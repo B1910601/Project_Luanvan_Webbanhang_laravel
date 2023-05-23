@@ -80,12 +80,12 @@
                                    if($pro->product_status == 0){
                                     ?>
                                 <a href="{{URL::to('/unactive-product/'.$pro->product_id)}}"><span
-                                        class="fa-thumbs-styling fa fa-thumbs-up"></span></a>
+                                        class="fa-thumbs-styling fa fa-thumbs-down"></span></a>
                                 <?php
                                         }else{
                                     ?>
                                 <a href="{{URL::to('/active-product/'.$pro->product_id)}}"><span
-                                        class="fa-thumbs-styling fa fa-thumbs-down"></span></a>
+                                        class="fa-thumbs-styling fa fa-thumbs-up"></span></a>
                                 <?php
                                    }
                                

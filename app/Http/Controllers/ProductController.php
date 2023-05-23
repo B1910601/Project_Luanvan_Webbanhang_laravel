@@ -10,11 +10,11 @@ class ProductController extends Controller
 {
     public function AuthLogin()
     {
-        $admin_id = Session::get('id');
+        $admin_id = Session::get('admin_id');
         if ($admin_id) {
             return Redirect::to('dashboard');
         } else {
-            return Redirect::to('admin')->send();
+            return Redirect::to('admin');
         }
     }
     public function add_product()
@@ -66,13 +66,13 @@ class ProductController extends Controller
     public function active_product($product_id)
     {
         DB::table('tbl_product')->where('product_id', $product_id)->update(['product_status' => 0]);
-        Session::put('message', 'Kích hoạt sản phẩm thành công');
+        Session::put('message', 'Ẩn');
         return Redirect::to('/all-product');
     }
     public function unactive_product($product_id)
     {
         DB::table('tbl_product')->where('product_id', $product_id)->update(['product_status' => 1]);
-        Session::put('message', 'Không kích hoạt sản phẩm thành công');
+        Session::put('message', 'Hiển thị');
         return Redirect::to('/all-product');
     }
     public function edit_product($product_id)

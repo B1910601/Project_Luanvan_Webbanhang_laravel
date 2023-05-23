@@ -12,11 +12,11 @@ session_start();
 class AdminController extends Controller
 {
     public function AuthLogin() {
-        $admin_id = Session::get('id');
+        $admin_id = Session::get('admin_id');
         if($admin_id){
             return Redirect::to('dashboard');
         }else{
-          return Redirect::to('admin')->send();
+          return Redirect::to('admin');
         }
     }
     public function index() {
@@ -35,7 +35,7 @@ class AdminController extends Controller
         $result = DB::table('tbl_admin')->where('admin_email', $admin_email)->where('admin_password', $admin_password)->first();
       if($result){
             Session::put('admin_name', $result->admin_name);
-            Session::put('id', $request->id);
+            Session::put('admin_id', $request->admin_id);
             return Redirect::to('/dashboard');
       }else{
             Session::put('message', 'Mật khẩu hoặc tài khoản không chính xác');

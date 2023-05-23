@@ -12,11 +12,11 @@ class CategoryProduct extends Controller
 {
     public function AuthLogin()
     {
-        $admin_id = Session::get('id');
+        $admin_id = Session::get('admin_id');
         if ($admin_id) {
             return Redirect::to('dashboard');
         } else {
-            return Redirect::to('admin')->send();
+            return Redirect::to('admin');
         }
     }
     public function add_category_product() {
@@ -45,14 +45,14 @@ class CategoryProduct extends Controller
     public function active_category_product($category_product_id) {
         $this->AuthLogin();
          DB::table('tbl_category_product')->where('category_id', $category_product_id)->update(['category_status' => 0]);
-        Session::put('message', 'Không kích hoạt danh mục sản phẩm thành công');
+        Session::put('message', 'Ẩn');
         return Redirect::to('/all-category-product');
     }
     public function unactive_category_product($category_product_id)
     {
         $this->AuthLogin();
         DB::table('tbl_category_product')->where('category_id', $category_product_id)->update(['category_status' => 1]);
-        Session::put('message', 'Kích hoạt danh mục sản phẩm thành công');
+        Session::put('message', 'Hiển thị');
         return Redirect::to('/all-category-product');
         
     }

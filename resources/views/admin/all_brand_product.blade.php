@@ -12,7 +12,7 @@
     </style>
     <div class="panel panel-default">
         <div class="panel-heading">
-           THƯƠNG HIẾU SẢN PHẨM
+           THƯƠNG HIỆU SẢN PHẨM
         </div>
         <?php
                                 	$message = Session::get('message');
@@ -72,12 +72,12 @@
                                    if($brand_pro->brand_status == 0){
                                     ?>
                                 <a href="{{URL::to('/unactive-brand-product/'.$brand_pro->brand_id)}}"><span
-                                        class="fa-thumbs-styling fa fa-thumbs-up"></span></a>
+                                        class="fa-thumbs-styling fa fa-thumbs-down"></span></a>
                                 <?php
                                         }else{
                                     ?>
                                 <a href="{{URL::to('/active-brand-product/'.$brand_pro->brand_id)}}"><span
-                                        class="fa-thumbs-styling fa fa-thumbs-down"></span></a>
+                                        class="fa-thumbs-styling fa fa-thumbs-up"></span></a>
                                 <?php
                                    }
                                
