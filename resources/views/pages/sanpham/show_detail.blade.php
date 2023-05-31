@@ -42,7 +42,7 @@
             <form action="{{URL::to('/save-cart')}}" method="POST">
                 {{ csrf_field() }}
             <span>
-                <span>{{number_format($value->product_price). ' ' . 'VNĐ'}}</span>
+                <span>{{number_format($value->product_price,0,',','.'). ' ' . 'VNĐ'}}</span>
                 <label>Số lượng:</label>
                 <input name="qty" type="number" min="1" value="1" />
                 <input name="productid_hidden" type="hidden" value="{{$value->product_id}}" />

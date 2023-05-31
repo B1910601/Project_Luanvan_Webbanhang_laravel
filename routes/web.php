@@ -7,6 +7,7 @@ use App\Http\Controllers\CategoryProduct;
 use App\Http\Controllers\BrandProduct;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\CartController;
+use App\Http\Controllers\CheckoutController;
 
 
 
@@ -70,3 +71,13 @@ Route::post('/save-cart', [CartController::class, 'save_cart']);
 Route::get('/show-cart', [CartController::class, 'show_cart']);
 Route::get('/delete-cart/{rowId}', [CartController::class, 'delete_cart']);
 Route::post('/update-cart-quantity', [CartController::class, 'update_cart_quantity']);
+
+//checkout
+Route::get('/login-checkout', [CheckoutController::class, 'login_checkout']);
+Route::post('/add-customer', [CheckoutController::class, 'add_customer']);
+Route::get('/checkout', [CheckoutController::class, 'checkout']);
+Route::get('/logout', [CheckoutController::class, 'logout']);
+Route::get('/payment', [CheckoutController::class, 'payment']);
+Route::post('/save-checkout-customer', [CheckoutController::class, 'save_checkout_customer']);
+
+Route::post('/login-customer', [CheckoutController::class, 'login_customer']);
