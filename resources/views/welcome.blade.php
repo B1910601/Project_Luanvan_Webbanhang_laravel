@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="">
 	<meta name="author" content="">
-	<title>Home | E-Shopper</title>
+	<title>Home | Smart-mobile</title>
 	<link href="{{asset('frontend/css/bootstrap.min.css')}}" rel="stylesheet">
 	<link href="{{asset('frontend/css/font-awesome.min.css')}}" rel="stylesheet">
 	<link href="{{asset('frontend/css/prettyPhoto.css')}}" rel="stylesheet">
@@ -513,6 +513,14 @@
 	<script src="{{asset('frontend/js/price-range.js')}}"></script>
 	<script src="{{asset('frontend/js/jquery.prettyPhoto.js')}}"></script>
 	<script src="{{asset('frontend/js/main.js')}}"></script>
+	<div id="fb-root"></div>
+	<script async defer crossorigin="anonymous"
+		src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v17.0&appId=3400862006815813&autoLogAppEvents=1"
+		nonce="UALtWXnQ"></script>
+	<div id="fb-root"></div>
+	<script async defer crossorigin="anonymous"
+		src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v17.0&appId=3400862006815813&autoLogAppEvents=1"
+		nonce="cIuED36c"></script>
 </body>
 
 </html>

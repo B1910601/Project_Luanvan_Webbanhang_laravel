@@ -2394,7 +2394,9 @@ h2.title {
   background: transparent;
   border: 1px solid#F7F7F0
 }
-
+.productinfo.text-center img {
+  height: 225px;
+}
 .btn.btn-primary {
   background:green;
   border: 0 none;

@@ -13,20 +13,20 @@
                         {{ csrf_field() }}
                         <div class="form-group">
                             <label for="exampleInputEmail1">Tên sản phẩm</label>
-                            <input type="text" class="form-control" name="product_name" placeholder="Name ">
+                            <input type="text" data-validation="length" data-validation-length="min20" data-validation-error-msg="Hãy điền tên sản phẩm" class="form-control" name="product_name" placeholder="Name ">
                         </div>
                         <div class="form-group">
                             <label for="exampleInputEmail1">Giá sản phẩm</label>
-                            <input type="text" class="form-control" name="product_price">
+                            <input data-validation="number" data-validation-error-msg="Hãy điền giá sản phẩm" type="text" class="form-control" name="product_price">
                         </div>
                         <div class="form-group">
                             <label for="exampleInputPassword1">Tóm tắt sản phẩm</label>
-                            <textarea class="form-control" name="product_content"
+                            <textarea class="form-control" data-validation="length" data-validation-length="min10000" data-validation-error-msg="Hãy điền tóm tắt sản phẩm" name="product_content"
                                > </textarea>
                         </div>
                         <div class="form-group">
                             <label for="exampleInputPassword1">Mô tả sản phẩm</label>
-                            <textarea class="form-control" name="product_desc" id="ckeditor1"
+                            <textarea class="form-control"  name="product_desc" id="ckeditor1"
                                 placeholder="Description "> </textarea>
                         </div>
                         <div class="form-group">
@@ -49,7 +49,7 @@
                         </div>
                         <div class="form-group">
                             <label for="exampleInputEmail1">Hình ảnh sản phẩm</label>
-                            <input type="file" class="form-control" name="product_image">
+                            <input type="file" class="form-control"  name="product_image">
                         </div>
 
                         <div class="form-group">

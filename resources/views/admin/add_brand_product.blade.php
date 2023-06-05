@@ -13,7 +13,7 @@
                         {{ csrf_field() }}
                         <div class="form-group">
                             <label for="exampleInputEmail1">Name Brand</label>
-                            <input type="text" class="form-control" name="brand_product_name"
+                            <input type="text" data-validation="length" data-validation-length="min20" data-validation-error-msg="Hãy điền tên thương hiệu" class="form-control" name="brand_product_name"
                                 placeholder="Name brand">
                         </div>
                         <div class="form-group">

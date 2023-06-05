@@ -121,8 +121,9 @@ class ProductController extends Controller
         return Redirect::to('/all-product');
     }
     //end admin
-    public function detail_product($product_id)
+    public function detail_product(Request $request, $product_id)
     {
+        $url_canonical = $request->url();
         $cate_product = DB::table('tbl_category_product')->where('category_status', '1')->orderBy('category_id', 'desc')->get();
         $brand_product = DB::table('tbl_brand_product')->where('brand_status', '1')->orderBy('brand_id', 'desc')->get();
         $detail_product = DB::table('tbl_product')
@@ -138,6 +139,6 @@ class ProductController extends Controller
         return view('pages.sanpham.show_detail')->with('category', $cate_product)->with(
             'brand',
             $brand_product
-        )->with('product_detail', $detail_product)->with('relate', $related_product);
+        )->with('product_detail', $detail_product)->with('relate', $related_product)->with('url_canonical', $url_canonical);
     }
 }

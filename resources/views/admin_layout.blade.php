@@ -343,6 +343,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <script src="{{asset('backend/js/jquery.slimscroll.js')}}"></script>
     <script src="{{asset('backend/js/jquery.nicescroll.js')}}"></script>
     <script src="{{asset('backend/ckeditor/ckeditor.js')}}"></script>
+   
+    <script src="{{asset('backend/js/jquery.form-validator.min.js')}}"></script>
+    <script>
+        $.validate([
+
+        ]);
+    </script>
     <script>
         CKEDITOR.replace('ckeditor1');
         CKEDITOR.replace('ckeditor2');
