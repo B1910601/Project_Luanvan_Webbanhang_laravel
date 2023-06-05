@@ -52,7 +52,7 @@ a#scrollUp {
   bottom: 0px;
   right: 10px;
   padding: 5px 10px;
-  background: #FE980F;
+  background: black;
   color: #FFF;
   -webkit-animation: bounce 2s ease infinite;
   animation: bounce 2s ease infinite;
@@ -162,13 +162,13 @@ a#scrollUp i{
 }
 
 .usa:hover {
-	background:#FE980F;
+	background:green;
 	color:#fff;
-	border-color:#FE980F;
+	border-color:green;
 }
 
 .usa:active, .usa.active {
-  background: none repeat scroll 0 0 #FE980F;
+  background: none repeat scroll 0 0 green;
   box-shadow: inherit;
   outline: 0 none;
 }
@@ -179,7 +179,7 @@ a#scrollUp i{
 }
 
 .dropdown-menu  li  a:hover, .dropdown-menu  li  a:focus {
-  background-color: #FE980F;
+  background-color: green;
   color: #FFFFFF;
   font-family: 'Roboto', sans-serif;
   text-decoration: none;
@@ -215,7 +215,7 @@ a#scrollUp i{
 
 
 .shop-menu ul li a:hover {
-	color:#fe980f;
+	color: green;
 	background:#fff;
 }
 
@@ -249,7 +249,7 @@ a#scrollUp i{
 
 .mainmenu ul li a:hover, .mainmenu ul li a.active,  .shop-menu ul li a.active{
 	background:none;
-	color:#fdb45e;
+	color:green;
 }
 
 .search_box input {
@@ -367,7 +367,7 @@ ul.sub-menu {
 }
 
 .companyinfo h2  span{
-  color:#FE980F;
+  color: green;
 }
 
 .companyinfo p {
@@ -405,7 +405,7 @@ ul.sub-menu {
   top: 0;
   width: 100%;
   height: 61px;
-  background: #FE980F;
+  background: green;
   border-radius: 3px;
   color: #FFF;
   font-size: 20px;
@@ -501,7 +501,7 @@ ul.sub-menu {
 
 .single-widget ul li a:hover{
 	background:none;
-	color:#FE980F;
+	color: green;
 }
 
 
@@ -518,7 +518,7 @@ ul.sub-menu {
 
 
 .searchform button {
-  background: #FE980F;
+  background: green;
   border: medium none;
   border-radius: 0;
   margin-left: -5px;
@@ -533,7 +533,7 @@ ul.sub-menu {
 
 .searchform  button:hover, 
 .searchform  button:focus{
-	background-color:#FE980F;
+	background-color:green;
 }
 
 .searchform p {
@@ -557,7 +557,7 @@ ul.sub-menu {
 }
 
 .footer-bottom p span a {
-  color: #FE980F;
+  color: green;
   font-style: italic;
   text-decoration: underline;
 }
@@ -577,7 +577,7 @@ ul.sub-menu {
 }
 
 .carousel-indicators li.active {
-	  background: #FE980F;
+	  background: green;
 }
 
 .item {
@@ -603,7 +603,7 @@ ul.sub-menu {
 }
 
 .item h1 span {
-	color:#FE980F;
+	color:green;
 }
 
 .item h2 {
@@ -623,7 +623,7 @@ ul.sub-menu {
 }
 
 .get {
-  background: #FE980F;
+  background: green;
   border: 0 none;
   border-radius: 0;
   color: #FFFFFF;
@@ -660,7 +660,7 @@ ul.sub-menu {
   padding-top: 15px;
 }
 .left-sidebar h2, .brands_products h2 {
-  color: #FE980F;
+
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
   font-weight: 700;
@@ -835,7 +835,7 @@ h2.title:before{
 
 
 h2.title {
-  color: #FE980F;
+  
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
   font-weight: 700;
@@ -862,7 +862,7 @@ h2.title {
 }
 
 .productinfo h2{
-	color: #FE980F;
+	
 	font-family: 'Roboto', sans-serif;
 	font-size: 24px;
 	font-weight: 700;
@@ -920,7 +920,7 @@ h2.title {
   background:#fff;
   border: 0 none;
   border-radius: 0;
-  color: #FE980F;
+  color: green;
   font-family: 'Roboto', sans-serif;
   font-size: 15px;
   margin-bottom: 25px;
@@ -928,7 +928,7 @@ h2.title {
 
 .product-overlay .add-to-cart:hover {
   background:#fff;
-  color: #FE980F;
+  color: green;
 }
 
 
@@ -952,7 +952,7 @@ h2.title {
 }
 
 .add-to-cart:hover {
-  background: #FE980F;
+  background: green;
   border: 0 none;
   border-radius: 0;
   color: #FFFFFF;
@@ -967,7 +967,7 @@ h2.title {
 }
 
 .add-to-cart:hover {
-  background: #FE980F;
+  background: green;
   color: #FFFFFF;
 }
 
@@ -989,7 +989,7 @@ h2.title {
 
 .choose ul li a:hover{
 	background:none;
-	color:#FE980F;
+	color: green;
 }
 
 .category-tab {
@@ -1016,7 +1016,7 @@ h2.title {
 }
 
 .category-tab ul  li  a:hover{
-	background:#FE980F;
+	background:green;
 	color:#fff;
 }
 
@@ -1025,7 +1025,7 @@ h2.title {
   -moz-border-left-colors: none;
   -moz-border-right-colors: none;
   -moz-border-top-colors: none;
-  background-color: #FE980F;
+  background-color: green;
   border:0px;
   color: #FFFFFF;
   cursor: default;
@@ -1054,7 +1054,7 @@ h2.title {
 }
 
 .recommended-item-control i {
-  background: none repeat scroll 0 0 #FE980F;
+  background: none repeat scroll 0 0 black;
   color: #FFFFFF;
   font-size: 20px;
   padding: 4px 10px;
@@ -1204,7 +1204,7 @@ h2.title {
   top: 35%;
 }
 .item-control i {
-  background: #FE980F;
+  background: black;
   color: #FFFFFF;
   font-size: 20px;
   padding: 5px 10px;
@@ -1249,7 +1249,7 @@ h2.title {
 }
 
 .product-information span span {
-  color: #FE980F;
+
   float: left;
   font-family: 'Roboto', sans-serif;
   font-size: 30px;
@@ -1282,7 +1282,7 @@ h2.title {
 
 
 .cart {
-  background: #FE980F;
+  background: olivedrab;
   border: 0 none;
   border-radius: 0;
   color: #FFFFFF;
@@ -1480,7 +1480,7 @@ h2.title {
 }
 
 .login-form form button, .signup-form form button {
-  background: #FE980F;
+  background: green;
   border: medium none;
   border-radius: 0;
   color: #FFFFFF;
@@ -1505,7 +1505,7 @@ h2.title {
 
 
 .or{
-	background: #FE980F;
+	background: green;
 	border-radius: 40px;
 	color: #FFFFFF;
 	font-family: 'Roboto', sans-serif;
@@ -1537,7 +1537,7 @@ h2.title {
 }
 
 .breadcrumbs .breadcrumb li a {
-  background:#FE980F;
+  background:green;
   color: #FFFFFF;
   padding: 3px 7px;
 }
@@ -1548,7 +1548,7 @@ h2.title {
   width: auto;
   border-width: 8px;
   border-style: solid;
-  border-color:transparent transparent transparent #FE980F;
+  border-color:transparent transparent transparent green;
   position: absolute;
   top: 11px;
   left:48px;
@@ -1566,7 +1566,7 @@ h2.title {
 
 
 #cart_items .cart_info .cart_menu {
-  background: #FE980F;
+  background: green;
   color: #fff;
   font-size: 16px;
   font-family: 'Roboto', sans-serif;
@@ -1621,7 +1621,7 @@ h2.title {
 
 
 #cart_items .cart_info .cart_total_price {
-  color: #FE980F;
+  color: black;
   font-size: 24px;
 }
 
@@ -1661,8 +1661,8 @@ h2.title {
 
 
 .cart_delete a {
-  background:#F0F0E9;
-  color: #FFFFFF;
+  background:green;
+  color: #FFF;
   padding: 5px 7px;
   font-size: 16px
 }
@@ -1773,12 +1773,16 @@ h2.title {
 }
 
 .update, .check_out {
-  background: #FE980F;
+  background: green;
   border-radius: 0;
   color: #FFFFFF;
   margin-top: 18px;
   border: none;
   padding: 5px 15px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
 }
 .update{
     margin-left: 40px;
@@ -2392,7 +2396,7 @@ h2.title {
 }
 
 .btn.btn-primary {
-  background:#FE980F;
+  background:green;
   border: 0 none;
   border-radius: 0;
   margin-top: 16px;

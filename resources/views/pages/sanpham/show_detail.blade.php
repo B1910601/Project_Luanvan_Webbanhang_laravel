@@ -129,7 +129,7 @@
                         <div class="single-products">
                             <div class="productinfo text-center">
                                 <img src="{{URL::to('uploads/product/'.$lienquan->product_image)}}" alt="" />
-                                <h2>{{$lienquan->product_price}}</h2>
+                                <h2>{{number_format($lienquan->product_price,0,',','.'). ' ' . 'VNĐ'}}</h2>
                                 <p>{{$lienquan->product_name}}</p>
                                 <button type="button" class="btn btn-default add-to-cart"><i
                                         class="fa fa-shopping-cart"></i>Add to cart</button>
