@@ -83,3 +83,6 @@ Route::get('/payment', [CheckoutController::class, 'payment']);
 Route::post('/save-checkout-customer', [CheckoutController::class, 'save_checkout_customer']);
 Route::post('/order-place', [CheckoutController::class, 'order_place']);
 Route::post('/login-customer', [CheckoutController::class, 'login_customer']);
+//order
+Route::get('/manager-order', [CheckoutController::class, 'manager_order']);
+Route::get('/view-order/{orderId}', [CheckoutController::class, 'view_order']);

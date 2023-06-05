@@ -11,7 +11,17 @@ use Cart;
 session_start();
 class CheckoutController extends Controller
 {
+    public function AuthLogin()
+    {
+        $admin_id = Session::get('admin_id');
+        if ($admin_id) {
+            return Redirect::to('dashboard');
+        } else {
+            return Redirect::to('admin');
+        }
+    }
     public function login_checkout() {
+        
         $cate_product = DB::table('tbl_category_product')->where('category_status', '1')->orderBy('category_id', 'desc')->get();
         $brand_product = DB::table('tbl_brand_product')->where('brand_status', '1')->orderBy('brand_id', 'desc')->get();
         return view('pages.checkout.login_checkout')->with('category', $cate_product)->with('brand', $brand_product);
@@ -114,4 +124,23 @@ class CheckoutController extends Controller
     }
 // return Redirect::to('/payment');
         }
+    public function manager_order() {
+        $this->AuthLogin();
+        $all_order = DB::table('tbl_order')
+        ->join('tbl_customer', 'tbl_order.customer_id', '=', 'tbl_customer.customer_id')
+        ->select('tbl_order.*', 'tbl_customer.customer_name')->orderBy('tbl_order.order_id', 'desc')->get();
+        $manager_order = view('admin.manager_order')->with('all_order', $all_order);
+        return view('admin_layout')->with('admin.manager_order', $manager_order);
+    }
+    public function view_order($orderId) {
+        $this->AuthLogin();
+        $orderbyid = DB::table('tbl_order')
+            ->join('tbl_customer', 'tbl_order.customer_id', '=', 'tbl_customer.customer_id')
+            ->join('tbl_shipping', 'tbl_order.shipping_id', '=', 'tbl_shipping.shipping_id')
+            ->join('tbl_order_details', 'tbl_order.order_id', '=', 'tbl_order_details.order_id')
+
+            ->select('tbl_order.*', 'tbl_customer.*', 'tbl_order_details.*', 'tbl_shipping.*')->first();
+        $order_view = view('admin.view_order')->with('order_by_id', $orderbyid);
+        return view('admin_layout')->with('admin.view_order', $order_view);
+    }
 }

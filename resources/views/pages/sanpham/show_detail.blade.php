@@ -123,7 +123,7 @@
             <div class="item active">
                 @foreach($relate as $key => $lienquan)
                     
-            
+            <a href="{{URL::to('/chi-tiet-san-pham/'.$lienquan->product_id)}}">
                 <div class="col-sm-4">
                     <div class="product-image-wrapper">
                         <div class="single-products">
@@ -137,6 +137,7 @@
                         </div>
                     </div>
                 </div>
+            </a>
                  @endforeach
             </div>
         </div>

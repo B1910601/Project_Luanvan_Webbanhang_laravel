@@ -22,11 +22,11 @@
                         <div class="form-group">
                             <label for="exampleInputPassword1">Tóm tắt sản phẩm</label>
                             <textarea class="form-control" name="product_content"
-                                id="exampleInputPassword1"> </textarea>
+                               > </textarea>
                         </div>
                         <div class="form-group">
                             <label for="exampleInputPassword1">Mô tả sản phẩm</label>
-                            <textarea class="form-control" name="product_desc" id="exampleInputPassword1"
+                            <textarea class="form-control" name="product_desc" id="ckeditor1"
                                 placeholder="Description "> </textarea>
                         </div>
                         <div class="form-group">

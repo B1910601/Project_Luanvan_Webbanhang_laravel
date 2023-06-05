@@ -23,11 +23,11 @@
                         <div class="form-group">
                             <label for="exampleInputPassword1">Tóm tắt sản phẩm</label>
                             <textarea class="form-control" name="product_content"
-                                id="exampleInputPassword1">{{$pro->product_content}}</textarea>
+                               >{{$pro->product_content}}</textarea>
                         </div>
                         <div class="form-group">
                             <label for="exampleInputPassword1">Mô tả sản phẩm</label>
-                            <textarea class="form-control" name="product_desc" id="exampleInputPassword1"
+                            <textarea class="form-control" name="product_desc" id="ckeditor1"
                                 placeholder="Description ">{{$pro->product_desc}} </textarea>
                         </div>
                         <div class="form-group">
