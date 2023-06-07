@@ -8,6 +8,7 @@ use App\Http\Controllers\BrandProduct;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\CartController;
 use App\Http\Controllers\CheckoutController;
+use App\Http\Controllers\MailController;
 
 
 
@@ -86,3 +87,6 @@ Route::post('/login-customer', [CheckoutController::class, 'login_customer']);
 //order
 Route::get('/manager-order', [CheckoutController::class, 'manager_order']);
 Route::get('/view-order/{orderId}', [CheckoutController::class, 'view_order']);
+
+//send mail
+Route::get('/send-mail', [MailController::class, 'send_mail']);
