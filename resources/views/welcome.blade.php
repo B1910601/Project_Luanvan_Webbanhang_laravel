@@ -7,25 +7,25 @@
 	<meta name="description" content="">
 	<meta name="author" content="">
 	<title>Home | Smart-mobile</title>
-	<link href="{{asset('frontend/css/bootstrap.min.css')}}" rel="stylesheet">
-	<link href="{{asset('frontend/css/font-awesome.min.css')}}" rel="stylesheet">
-	<link href="{{asset('frontend/css/prettyPhoto.css')}}" rel="stylesheet">
-	<link href="{{asset('frontend/css/price-range.css')}}" rel="stylesheet">
-	<link href="{{asset('frontend/css/animate.css')}}" rel="stylesheet">
-	<link href="{{asset('frontend/css/main.css')}}" rel="stylesheet">
-	<link href="{{asset('frontend/css/responsive.css')}}" rel="stylesheet">
+	<link href="{{asset('public/frontend/css/bootstrap.min.css')}}" rel="stylesheet">
+	<link href="{{asset('public/frontend/css/font-awesome.min.css')}}" rel="stylesheet">
+	<link href="{{asset('public/frontend/css/prettyPhoto.css')}}" rel="stylesheet">
+	<link href="{{asset('public/frontend/css/price-range.css')}}" rel="stylesheet">
+	<link href="{{asset('public/frontend/css/animate.css')}}" rel="stylesheet">
+	<link href="{{asset('public/frontend/css/main.css')}}" rel="stylesheet">
+	<link href="{{asset('public/frontend/css/responsive.css')}}" rel="stylesheet">
 	<!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script>
     <![endif]-->
-	<link rel="shortcut icon" href="i{{('frontend/img/ico/favicon.ico')}}">
+	<link rel="shortcut icon" href="i{{('public/frontend/img/ico/favicon.ico')}}">
 	<link rel="apple-touch-icon-precomposed" sizes="144x144"
-		href="{{('frontend/img/icon/apple-touch-icon-144-precomposed.png')}}">
+		href="{{('public/frontend/img/icon/apple-touch-icon-144-precomposed.png')}}">
 	<link rel="apple-touch-icon-precomposed" sizes="114x114"
-		href="{{('frontend/img/icon/apple-touch-icon-114-precomposed.png')}}">
+		href="{{('public/frontend/img/icon/apple-touch-icon-114-precomposed.png')}}">
 	<link rel="apple-touch-icon-precomposed" sizes="72x72"
-		href="{{('frontend/img/icon/apple-touch-icon-72-precomposed.png')}}">
-	<link rel="apple-touch-icon-precomposed" href="{{('frontend/img/ico/apple-touch-icon-57-precomposed.png')}}">
+		href="{{('public/frontend/img/icon/apple-touch-icon-72-precomposed.png')}}">
+	<link rel="apple-touch-icon-precomposed" href="{{('public/frontend/img/ico/apple-touch-icon-57-precomposed.png')}}">
 </head>
 <!--/head-->
 
@@ -507,20 +507,21 @@
 
 
 
-	<script src="{{asset('frontend/js/jquery.js')}}"></script>
-	<script src="{{asset('frontend/js/bootstrap.min.js')}}"></script>
-	<script src="{{asset('frontend/js/jquery.scrollUp.min.js')}}"></script>
-	<script src="{{asset('frontend/js/price-range.js')}}"></script>
-	<script src="{{asset('frontend/js/jquery.prettyPhoto.js')}}"></script>
-	<script src="{{asset('frontend/js/main.js')}}"></script>
+	<script src="{{asset('public/frontend/js/jquery.js')}}"></script>
+	<script src="{{asset('public/frontend/js/bootstrap.min.js')}}"></script>
+	<script src="{{asset('public/frontend/js/jquery.scrollUp.min.js')}}"></script>
+	<script src="{{asset('public/frontend/js/price-range.js')}}"></script>
+	<script src="{{asset('public/frontend/js/jquery.prettyPhoto.js')}}"></script>
+	<script src="{{asset('public/frontend/js/main.js')}}"></script>
 	<div id="fb-root"></div>
 	<script async defer crossorigin="anonymous"
 		src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v17.0&appId=3400862006815813&autoLogAppEvents=1"
 		nonce="UALtWXnQ"></script>
 	<div id="fb-root"></div>
+	<div id="fb-root"></div>
 	<script async defer crossorigin="anonymous"
 		src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v17.0&appId=3400862006815813&autoLogAppEvents=1"
-		nonce="cIuED36c"></script>
+		nonce="VPp8vwho"></script>
 </body>
 
 </html>

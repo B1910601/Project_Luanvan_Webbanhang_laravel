@@ -6,7 +6,7 @@
     <!--product-details-->
     <div class="col-sm-5">
         <div class="view-product">
-            <img src="{{URL::to('uploads/product/'.$value->product_image)}}" alt="" />
+            <img src="{{URL::to('public/uploads/product/'.$value->product_image)}}" alt="" />
             <h3>ZOOM</h3>
         </div>
         <div id="similar-product" class="carousel slide" data-ride="carousel">
@@ -56,11 +56,7 @@
             <p><b>Điều kiện:</b> Hàng mới 100%</p>
             <p><b>Thương hiệu:</b> {{$value->brand_name}}</p>
             <p><b>Danh mục:</b> {{$value->category_name}}</p>
-<div class="fb-share-button" data-href="http://127.0.0.1:8000/" data-layout="" data-size=""><a target="_blank"
-        href="https://www.facebook.com/sharer/sharer.php?u={{$url_canonical}}&amp;src=sdkpreparse"
-        class="fb-xfbml-parse-ignore">Chia sẻ</a></div>
-            <div class="fb-like" data-href="{{$url_canonical}}" data-width="" data-layout="" data-action="" data-size=""
-            data-share="false"></div>
+
         </div>
         <!--/product-information-->
     </div>
@@ -93,8 +89,10 @@
 
         <div class="tab-pane fade " id="reviews">
             <div class="col-sm-12">
-               <div class="fb-comments" data-href="{{$url_canonical}}" data-width="" data-numposts="10"></div>
+                <div class="fb-comments" data-href="{{$url_canonical}}" data-width="" data-numposts="10">
+                </div>
             </div>
+            
         </div>
 
     </div>
@@ -115,7 +113,7 @@
                     <div class="product-image-wrapper">
                         <div class="single-products">
                             <div class="productinfo text-center">
-                                <img src="{{URL::to('uploads/product/'.$lienquan->product_image)}}" alt="" />
+                                <img src="{{URL::to('public/uploads/product/'.$lienquan->product_image)}}" alt="" />
                                 <h2>{{number_format($lienquan->product_price,0,',','.'). ' ' . 'VNĐ'}}</h2>
                                 <p>{{$lienquan->product_name}}</p>
                                 <button type="button" class="btn btn-default add-to-cart"><i

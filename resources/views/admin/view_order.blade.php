@@ -94,7 +94,7 @@
 
             </thead>
             <tbody>
-
+    
                 <tr>
 
                         <td>{{$order_by_id->shipping_name}}</td>

@@ -90,3 +90,8 @@ Route::get('/view-order/{orderId}', [CheckoutController::class, 'view_order']);
 
 //send mail
 Route::get('/send-mail', [MailController::class, 'send_mail']);
+
+
+//login fb
+Route::get('/login-facebook', [AdminController::class, 'login_facebook']);
+Route::get('/admin/callback', [AdminController::class, 'callback_facebook']);

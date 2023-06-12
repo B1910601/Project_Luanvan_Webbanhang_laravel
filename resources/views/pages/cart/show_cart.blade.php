@@ -28,7 +28,7 @@
                     @foreach($content as $v_content)
                     <tr>
                         <td class="cart_product">
-                            <a href=""><img src="{{URL::to('uploads/product/'.$v_content->options->image)}}" alt=""
+                            <a href=""><img src="{{URL::to('public/uploads/product/'.$v_content->options->image)}}" alt=""
                                     width="100" /></a>
                         </td>
                         <td class="cart_description">
